@@ -1,0 +1,7 @@
+body{background-color:yellow;
+	background-image: url("../pics/flower.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 500px;
+	margin-left: 200px;}
+p{color:blue;}

@@ -1,0 +1,68 @@
+p:first-child{
+    color: lightblue;
+}
+p>i:last-child{
+    color: blue;
+}
+p:first-child i{
+    color:green;
+}
+q:lang(no){
+    qoutes:"~" "~";
+}
+p::first-line{
+    color:red;
+    font-variant: small-caps;
+}
+p.article::first-letter{
+    font-size: xx-large;
+}
+h1::before{
+    content: "Hello";
+}
+h1::after{
+    content: "World";
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    display: inline;
+    float: left;
+}
+a{
+    background-color: orange;
+    display: block;
+    width:50px;
+}
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #0000ff;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+    opacity:0.4;
+
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid white;
+}
+
+div.img a:hover img {
+    border: 1px solid #0000ff;
+    background-color: white;
+}
+
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}

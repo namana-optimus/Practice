@@ -1,0 +1,10 @@
+#leftside{background-color:yellow;
+		  width:625px;
+		  height: 1200px;
+		  float:left;
+		  }
+#rightside{background-color:red;
+		  width:600px;
+		  height: 1200px;
+		  float:left;
+		  }

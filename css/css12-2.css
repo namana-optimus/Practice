@@ -1,0 +1,65 @@
+img{
+    opacity:0.6;
+}
+img:hover{
+    opacity: 1;
+}
+div.background{
+
+    background: url(../images/flower.jpg) no-repeat;
+    background-size: 500px;
+}
+div.transbox{
+    background-color: white;
+    opacity:0.6;
+    padding:50px;
+    height:400px;
+    width:400px;
+    border: 1px solid black;
+}
+img.bird{
+    width:120px;
+    height:120px;
+    background: url(../images/birds.png);
+}
+img.bird2{
+    width: 100px;
+    height: 100px;
+    background: url(../images/birds.png) -225px -100px;
+}
+#hover:hover{
+    background: url(../images/birds.png) -225px -100px;
+}
+@media screen {
+    p{
+        font-family: sans-serif,;
+        font-size: 14px;
+    }
+}
+@media print {
+    p{
+        font-family: serif,;
+        font-size: 24px;
+    }
+}
+div[target] {
+    background-color: yellow;
+}
+div[target=_blank] {
+    background-color: green;
+}
+div[title~=div] {
+    background-color: red;
+}
+div[title|=top] {
+    background-color: lightgreen;
+}
+div[title^=bottom] {
+    background-color: cyan;
+}
+div[title$=test] {
+    background-color: lightcyan;
+}
+div[title*=work] {
+    background-color: lightgreen;
+}

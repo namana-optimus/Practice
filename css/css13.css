@@ -1,0 +1,70 @@
+div.border{
+    border:2px solid black;
+    border-radius: 25px;
+    padding:10px;
+    background-color: #e0ffff;
+    box-shadow: 5px 10px 15px black;
+}
+#image{
+    border-image: url(../images/border.png) 30 30 round;
+}
+div.resize{
+    background: url(../images/birds.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+div.strech{
+    background: url(../images/birds.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+div.padding{
+    border: 1px solid black;
+    padding: 50px;
+    background-image: url(../images/birds.png);
+    background-size: 100% 100 %;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: padding-box;
+}
+div.content{
+    border: 1px solid black;
+    padding: 50px;
+    background-image: url(../images/birds.png);
+    background-size: 100% 100 %;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+}
+div.multiback{
+    background: url(../images/birds.png),url(../images/flower.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#grad{
+    background: linear-gradient(red,#0000ff);
+}
+#grad_horizontal{
+     background: linear-gradient(to right,red,#0000ff);
+}
+#grad_diagonal{
+    background: linear-gradient(to bottom right,red,#0000ff);
+}
+#grad_angle{
+    background: linear-gradient(60deg,red,#0000ff);
+}
+#grad_multi{
+    background: linear-gradient(to right,red,#0000ff,green,magenta,yellow);
+}
+#grad_transparency{
+    background: linear-gradient(to right,rgba(255,0,0,0),rgba(255,0,0,1));
+}
+#grad_repeat{
+    background: repeating-linear-gradient(to right,red,green 10%, yellow 20%);
+}
+#grad_radial{
+    background: radial-gradient(circle,red,green,blue);
+}
+#grad_repeat_rad{
+    background: repeating-radial-gradient(red,yellow 10%,green 15%);
+}

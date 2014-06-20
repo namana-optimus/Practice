@@ -1,0 +1,31 @@
+h1{
+    text-shadow: 1px 2px 3px grey;
+}
+div{
+    word-wrap: break-word;
+    width:200px;
+    border: 1px solid black;
+}
+.rotate{
+    -webkit-transform: rotate(30deg);
+}
+.scale{
+    -webkit-transform: scale(2,4);
+}
+.skew{
+    -webkit-transform: skew(20deg,40deg);
+}
+.rotate3d{
+    -webkit-transform: rotateX(30deg);
+}
+.transition{
+    width:200px;
+    height:200px;
+    background: red;
+    -webkit-transition: width 5s, height 5s, -webkit-transform 4s;
+}
+div:hover{
+    width:500px;
+    height:500px;
+    -webkit-transform: rotate(180deg);
+}
