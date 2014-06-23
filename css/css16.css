@@ -1,0 +1,27 @@
+#panel1,#panel2{
+    text-align: center;
+    background-color: gold;
+    padding: 5px;
+    border: 1px solid black;
+}
+#panel2{
+    display: none;
+    padding: 50px;
+}
+#panel3{
+    height:100px;
+    width:100px;
+    background-color: lightgreen;
+    position:absolute;
+}
+#remove{
+    border: 1px solid black;
+}
+.class1{
+    color: #0000ff;
+    font-size: 30px;
+}
+.class2{
+    color: green;
+    font-size: 50px;
+}

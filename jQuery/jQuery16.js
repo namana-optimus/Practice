@@ -1,0 +1,82 @@
+/**
+ * Created by Admin on 6/23/2014.
+ */
+$(document).ready(function(){
+    $("#b1").click(function(){
+        $(".class1").hide(2000);
+    });
+    $("#b2").dblclick(function(){
+        $("#id1").hide(2000,function(){
+            alert("Paragraph Hidden");
+        });
+    });
+    $("p.class1").mouseenter(function(){
+        $(this).hide();
+    });
+    $("p.class1").mouseleave(function(){
+        $(this).show();
+    });
+    $("#b1").hover(function(){
+        $(this).css("background-color","grey");
+    },
+    function(){
+        $(this).css("background-color","white");
+    });
+    $("#b3").click(function(){
+        $(".class1").fadeToggle(1000);
+    });
+    $("#panel1").hover(function(){
+        $("#panel2").slideToggle(2000);
+    });
+    $("#panel3").click(function(){
+        $("#panel3").animate({
+            left:"125px",
+            opacity:"0.8",
+            height:"150px",
+            width:"150px"
+        });
+        $("#panel3").animate({
+            left:"250px",
+            opacity:"0.5",
+            height:"250px",
+            width:"250px"
+        });
+        $("#panel3").animate({
+            left:"125px",
+            opacity:"0.8",
+            height:"150px",
+            width:"150px"
+        });
+        $("#panel3").animate({
+            left:"0px",
+            opacity:"1",
+            height:"100px",
+            width:"100px"
+        });
+    });
+    $("#stop").click(function(){
+        $("#panel3").stop();
+    });
+    $("#b4").click(function(){
+        $("#p1").css("color","red").slideUp(2000).slideDown(2000,function(){
+            $("#p1").css("color","black")}
+        );
+    });
+    $("#b5").click(function(){
+        $("p.add").append(" <b>Appended text</b>.");
+    });
+
+    $("#b6").click(function(){
+        $("ol").prepend("<li>Prepended item</li>");
+    });
+    $("#remove").click(function(){
+        $("p").remove(".remove");
+    });
+    $("#changeclass").click(function(){
+        $("#changeclass").removeClass("class1");
+        $("#changeclass").addClass("class2");
+    });
+    $(".ajax").click(function(){
+        $(".ajax").load("text.txt");
+    });
+});
